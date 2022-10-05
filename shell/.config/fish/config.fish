@@ -1,3 +1,5 @@
+fish_add_path $HOME/.local/bin
+
 abbr -a g git
 abbr -a gc 'git checkout'
 abbr -a ga 'git add -p'
@@ -22,3 +24,6 @@ else
 end
 
 [ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
+
+# Enable pyenv
+pyenv init - | source
