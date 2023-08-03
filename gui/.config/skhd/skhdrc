@@ -107,7 +107,7 @@
 
 # open terminal, blazingly fast compared to iTerm/Hyper
 cmd - return  : open -n /Applications/Alacritty.app
-cmd - j  : open -n /Applications/Alacritty.app --args '-o env.NO_LOCAL_TMUX=1'
+cmd - j  : open -n /Applications/Alacritty.app --args '-o env.NO_LOCAL_TMUX=yes'
 
 # open firefox
 cmd + shift - return : /Applications/Firefox.app/Contents/MacOS/firefox --new-window
