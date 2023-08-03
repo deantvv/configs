@@ -9,10 +9,12 @@ abbr -a vim nvim
 set -x LANG en_US.UTF-8
 
 if status is-interactive
-	if ! set -q TMUX
+	if ! begin set -q TMUX; or set -q NO_LOCAL_TMUX; end
+		# echo 'start tmux'
 		exec tmux new-session -A -s main
 	end
 end
+
 
 if command -v exa > /dev/null
 	abbr -a l 'exa'
