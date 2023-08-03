@@ -3,6 +3,8 @@ fish_add_path $HOME/.local/bin $HOME/.pyenv/bin
 abbr -a g git
 abbr -a gc 'git checkout'
 abbr -a ga 'git add -p'
+abbr -a v nvim
+abbr -a vim nvim
 
 set -x LANG en_US.UTF-8
 
