@@ -1,4 +1,4 @@
-fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.local/bin $HOME/.pyenv/bin
 
 abbr -a g git
 abbr -a gc 'git checkout'
